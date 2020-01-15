@@ -1,0 +1,91 @@
+﻿#ChatInbox {
+
+}
+
+/* Contacts */
+
+#ChatInbox #ContactsSection {
+    padding-left: 0;
+    padding-right: 0;
+    border-left: 1px dotted #00000022;
+    border-right: 1px dotted #00000022;
+}
+
+#ChatInbox #ContactsSection .contact {
+    cursor: pointer;
+    border-bottom: 1px dotted #00000022;
+    padding: 0.4em;
+
+    transition: background-color 0.09s ease-out;
+}
+
+#ChatInbox #ContactsSection .contact:hover {
+    background-color: #00000011;
+}
+
+#ChatInbox #ContactsSection .contact .header {
+
+}
+
+#ChatInbox #ContactsSection .contact .header .image {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #00000022;
+}
+
+#ChatInbox #ContactsSection .contact .header .name {
+    display: inline-block;
+    font-weight: bold;
+}
+
+#ChatInbox #ContactsSection .contact .preview {
+    
+}
+
+/* Messages */
+#ChatInbox #MessageSection {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#ChatInbox #MessageSection #Messages {
+    padding: 0 24px;
+    width: 100%;
+}
+
+#ChatInbox #MessageSection #Messages .message {
+    /*display: block;
+    width: 100%;*/
+    max-width: 40%;
+    break-before: always;
+}
+
+#ChatInbox #MessageSection #Messages .message .message-box{
+    border-radius: 10px;
+    padding: 8px;
+    margin: 18px 0;
+}
+
+#ChatInbox #MessageSection #Messages .message .message-box.self {
+    left: 0;
+    background-color: #CCCCFF;
+}
+
+#ChatInbox #MessageSection #Messages .message .message-box.other {
+    right: 0;
+    background-color: #88FF88;
+}
+
+#ChatInbox #MessageSection #Messages .message .message-box .time {
+
+}
+
+#ChatInbox #MessageSection #Messages .message .message-box .content {
+
+}
+
+#ChatInbox #MessageSection #Messages .message .message-box .status {
+
+}

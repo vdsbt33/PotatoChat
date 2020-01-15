@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link rel="stylesheet" href="~/css/Chat.css" />
+
+<div id="ChatInbox" class="d-flex">
+    <div id="ContactsSection" class="d-inline-block col-4">
+        <div class="contact">
+            <div class="header">
+                <div class="image">
+                    <img src="" />
+                </div>
+                <div class="name">
+                    Vinícius de Souza
+                </div>
+            </div>
+            <div class="preview">
+                Teste de envio de mensagem em tempo real ut...
+            </div>
+        </div>
+    </div>
+    <div id="MessageSection" class="d-inline-block">
+        <div id="Messages" class="d-flex justify-content-lg-between">
+            <div class="message flex-lg-row">
+                <div class="message-box other">
+                    <div class="time">
+                        @DateTime.Now.AddMinutes(-1).ToString("dd/MM/yyyy hh:mm")
+                    </div>
+                    <div class="content">
+                        Teste de envio de mensagem em tempo real utilizando banco não relacional.
+                    </div>
+                    <div class="status">
+                        @*Sent / Read*@
+                        Enviado
+                    </div>
+                </div>
+            </div>
+            <div class="message flex-lg-row">
+                <div class="message-box self">
+                    <div class="time">
+                        @DateTime.Now.ToString("dd/MM/yyyy hh:mm")
+                    </div>
+                    <div class="content">
+                        Está funcionando que é uma beleza!
+                    </div>
+                    <div class="status">
+                        @*Sent / Read*@
+                        Enviado
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="InputField" class="col-10">
+            <div class="toolpanel">
+
+            </div>
+            <div class="content">
+                <textarea rows="3" placeholder="Insira uma mensagem..."></textarea>
+                <button type="button">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
