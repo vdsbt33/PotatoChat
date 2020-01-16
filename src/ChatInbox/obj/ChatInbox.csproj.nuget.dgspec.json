@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vinicius.souza\\source\\repos\\ChatInbox\\ChatInbox\\ChatInbox.csproj": {}
+    "C:\\Git\\PotatoChat\\src\\ChatInbox\\ChatInbox.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vinicius.souza\\source\\repos\\ChatInbox\\ChatInbox\\ChatInbox.csproj": {
+    "C:\\Git\\PotatoChat\\src\\ChatInbox\\ChatInbox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinicius.souza\\source\\repos\\ChatInbox\\ChatInbox\\ChatInbox.csproj",
+        "projectUniqueName": "C:\\Git\\PotatoChat\\src\\ChatInbox\\ChatInbox.csproj",
         "projectName": "ChatInbox",
-        "projectPath": "C:\\Users\\vinicius.souza\\source\\repos\\ChatInbox\\ChatInbox\\ChatInbox.csproj",
+        "projectPath": "C:\\Git\\PotatoChat\\src\\ChatInbox\\ChatInbox.csproj",
         "packagesPath": "C:\\Users\\vinicius.souza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinicius.souza\\source\\repos\\ChatInbox\\ChatInbox\\obj\\",
+        "outputPath": "C:\\Git\\PotatoChat\\src\\ChatInbox\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
