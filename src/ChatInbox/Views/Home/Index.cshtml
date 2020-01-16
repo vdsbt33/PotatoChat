@@ -6,6 +6,7 @@
 
 <div id="ChatInbox" class="d-flex">
     <div id="Profile" class="d-inline-block col-4">
+        <!-- User Profile -->
         <div id="UserSection">
             <div class="profile">
                 <div class="image">
@@ -16,6 +17,7 @@
                 </div>
             </div>
         </div>
+        <!-- Contact List -->
         <div id="ContactsSection">
             <div id="Search" class="input-group">
                 <i class="fas fa-search"></i>
@@ -37,6 +39,7 @@
         </div>
     </div>
     <div id="MessageSection" class="d-inline-block">
+        <!-- Message List -->
         <div id="Messages">
             <div class="message other">
                 <div class="message-box">
@@ -45,7 +48,7 @@
                     </div>
                     <div class="details">
                         <div class="time">
-                            @DateTime.Now.AddMinutes(-1).ToString("dd/MM/yyyy hh:mm")
+                            @DateTime.Now.AddMinutes( -1 ).ToString( "dd/MM/yyyy hh:mm" )
                         </div>
                     </div>
                 </div>
@@ -57,20 +60,40 @@
                     </div>
                     <div class="details">
                         <div class="time">
-                            @DateTime.Now.AddMinutes(-1).ToString("dd/MM/yyyy hh:mm")
+                            @DateTime.Now.AddMinutes( -1 ).ToString( "dd/MM/yyyy hh:mm" )
                         </div>
-                        <div class="status">
+                        <div class="status h" data-toggle="tooltip" data-placement="left" title="Lido">
                             @*Sent / Read*@
-                            Enviado
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message self">
+                <div class="message-box">
+                    <div class="content">
+                        Ou será que...
+                    </div>
+                    <div class="details">
+                        <div class="time">
+                            @DateTime.Now.AddMinutes( -1 ).ToString( "dd/MM/yyyy hh:mm" )
+                        </div>
+                        <div class="status l" data-toggle="tooltip" data-placement="left" title="Enviado">
+                            @*Sent / Read*@
+                            <i class="fas fa-check"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="InputField" class="col-12">
+            <!-- Toolbar -->
             <div class="toolpanel">
+                <ul>
 
+                </ul>
             </div>
+            <!-- Message Input -->
             <div class="content">
                 <div class="form-group d-flex">
                     <textarea id="msg-input" class="form-control" placeholder="Insira uma mensagem..."></textarea>
